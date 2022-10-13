@@ -1,0 +1,347 @@
+2022/10/13 14:05:01 [INFO] Packer version: 1.8.3 [go1.17.11 linux amd64]
+2022/10/13 14:05:01 [TRACE] discovering plugins in /usr/bin
+2022/10/13 14:05:01 [TRACE] discovering plugins in /home/rafael/.config/packer/plugins
+2022/10/13 14:05:01 [DEBUG] Discovered plugin: docker = /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64
+2022/10/13 14:05:01 [INFO] found external [-packer-default-plugin-name-] builders from docker plugin
+2022/10/13 14:05:01 [INFO] found external [import push save tag] post-processors from docker plugin
+2022/10/13 14:05:01 [TRACE] discovering plugins in .
+2022/10/13 14:05:01 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2022/10/13 14:05:01 [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/rafael/.packerconfig
+2022/10/13 14:05:01 [WARN] Config file doesn't exist: /home/rafael/.packerconfig
+2022/10/13 14:05:01 [INFO] Setting cache directory: /home/rafael/.cache/packer
+2022/10/13 14:05:01 [TRACE] listing potential installations for "github.com/hashicorp/docker" that match ">= 0.0.7". plugingetter.ListInstallationsOptions{FromFolders:[]string{"/usr/bin/packer", ".", "/home/rafael/.config/packer/plugins"}, BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"linux", ARCH:"amd64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.digest)(0xc000984080)}}}}
+2022/10/13 14:05:01 [TRACE] Found the following "github.com/hashicorp/docker" installations: [{/home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64 v1.0.8}]
+2022/10/13 14:05:01 [INFO] found external [-packer-default-plugin-name-] builders from docker plugin
+2022/10/13 14:05:01 [INFO] found external [import push save tag] post-processors from docker plugin
+2022/10/13 14:05:01 [TRACE] validateValue: not active for docker_image, so skipping
+2022/10/13 14:05:01 [TRACE] Starting external plugin /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64 start builder -packer-default-plugin-name-
+2022/10/13 14:05:01 Starting plugin: /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64 []string{"/home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64", "start", "builder", "-packer-default-plugin-name-"}
+2022/10/13 14:05:01 Waiting for RPC address for: /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Plugin address: unix /tmp/packer-plugin3655108327
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Waiting for connection...
+2022/10/13 14:05:01 Received unix RPC address for /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64: addr is /tmp/packer-plugin3655108327
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Serving a plugin connection...
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 [TRACE] starting builder -packer-default-plugin-name-
+2022/10/13 14:05:01 [TRACE] Starting internal plugin packer-provisioner-shell
+2022/10/13 14:05:01 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-shell"}
+2022/10/13 14:05:01 Waiting for RPC address for: /usr/bin/packer
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] Packer version: 1.8.3 [go1.17.11 linux amd64]
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/rafael/.packerconfig
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/rafael/.packerconfig
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] Setting cache directory: /home/rafael/.cache/packer
+2022/10/13 14:05:01 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
+2022/10/13 14:05:01 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin3636417173
+2022/10/13 14:05:01 packer-provisioner-shell plugin: Waiting for connection...
+2022/10/13 14:05:01 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin3636417173
+2022/10/13 14:05:01 packer-provisioner-shell plugin: Serving a plugin connection...
+2022/10/13 14:05:01 [TRACE] Starting internal plugin packer-provisioner-shell
+2022/10/13 14:05:01 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-shell"}
+2022/10/13 14:05:01 Waiting for RPC address for: /usr/bin/packer
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] Packer version: 1.8.3 [go1.17.11 linux amd64]
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/rafael/.packerconfig
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/rafael/.packerconfig
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] Setting cache directory: /home/rafael/.cache/packer
+2022/10/13 14:05:01 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
+2022/10/13 14:05:01 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin2085365855
+2022/10/13 14:05:01 packer-provisioner-shell plugin: Waiting for connection...
+2022/10/13 14:05:01 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin2085365855
+2022/10/13 14:05:01 packer-provisioner-shell plugin: Serving a plugin connection...
+2022/10/13 14:05:01 [TRACE] Starting external plugin /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64 start post-processor tag
+2022/10/13 14:05:01 Starting plugin: /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64 []string{"/home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64", "start", "post-processor", "tag"}
+2022/10/13 14:05:01 Waiting for RPC address for: /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Plugin address: unix /tmp/packer-plugin4052884000
+2022/10/13 14:05:01 Received unix RPC address for /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64: addr is /tmp/packer-plugin4052884000
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Waiting for connection...
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Serving a plugin connection...
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 [TRACE] starting post-processor tag
+2022/10/13 14:05:01 [TRACE] Starting external plugin /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64 start builder -packer-default-plugin-name-
+2022/10/13 14:05:01 Starting plugin: /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64 []string{"/home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64", "start", "builder", "-packer-default-plugin-name-"}
+2022/10/13 14:05:01 Waiting for RPC address for: /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Plugin address: unix /tmp/packer-plugin2437232446
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Waiting for connection...
+2022/10/13 14:05:01 Received unix RPC address for /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64: addr is /tmp/packer-plugin2437232446
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Serving a plugin connection...
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 [TRACE] starting builder -packer-default-plugin-name-
+2022/10/13 14:05:01 [TRACE] Starting internal plugin packer-provisioner-shell
+2022/10/13 14:05:01 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-shell"}
+2022/10/13 14:05:01 Waiting for RPC address for: /usr/bin/packer
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] Packer version: 1.8.3 [go1.17.11 linux amd64]
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/rafael/.packerconfig
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/rafael/.packerconfig
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] Setting cache directory: /home/rafael/.cache/packer
+2022/10/13 14:05:01 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
+2022/10/13 14:05:01 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin2708165352
+2022/10/13 14:05:01 packer-provisioner-shell plugin: Waiting for connection...
+2022/10/13 14:05:01 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin2708165352
+2022/10/13 14:05:01 packer-provisioner-shell plugin: Serving a plugin connection...
+2022/10/13 14:05:01 [TRACE] Starting internal plugin packer-provisioner-shell
+2022/10/13 14:05:01 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-shell"}
+2022/10/13 14:05:01 Waiting for RPC address for: /usr/bin/packer
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] Packer version: 1.8.3 [go1.17.11 linux amd64]
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/rafael/.packerconfig
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/rafael/.packerconfig
+2022/10/13 14:05:01 packer-provisioner-shell plugin: [INFO] Setting cache directory: /home/rafael/.cache/packer
+2022/10/13 14:05:01 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
+2022/10/13 14:05:01 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin2315756453
+2022/10/13 14:05:01 packer-provisioner-shell plugin: Waiting for connection...
+2022/10/13 14:05:01 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin2315756453
+2022/10/13 14:05:01 packer-provisioner-shell plugin: Serving a plugin connection...
+2022/10/13 14:05:01 [TRACE] Starting external plugin /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64 start post-processor tag
+2022/10/13 14:05:01 Starting plugin: /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64 []string{"/home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64", "start", "post-processor", "tag"}
+2022/10/13 14:05:01 Waiting for RPC address for: /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Plugin address: unix /tmp/packer-plugin522768533
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Waiting for connection...
+2022/10/13 14:05:01 Received unix RPC address for /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64: addr is /tmp/packer-plugin522768533
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Serving a plugin connection...
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 [TRACE] starting post-processor tag
+2022/10/13 14:05:01 ui: [1;32mlearn-packer.docker.ubuntu: output will be in this color.[0m
+2022/10/13 14:05:01 ui: [1;36mlearn-packer.docker.ubuntu-bionic: output will be in this color.[0m
+2022/10/13 14:05:01 ui: 
+2022/10/13 14:05:01 Build debug mode: false
+2022/10/13 14:05:01 Force build: false
+2022/10/13 14:05:01 On error: 
+2022/10/13 14:05:01 Waiting on builds to complete...
+2022/10/13 14:05:01 Starting build run: learn-packer.docker.ubuntu
+2022/10/13 14:05:01 Starting build run: learn-packer.docker.ubuntu-bionic
+2022/10/13 14:05:01 Running builder: 
+2022/10/13 14:05:01 Running builder: 
+2022/10/13 14:05:01 [INFO] (telemetry) Starting builder docker.ubuntu
+2022/10/13 14:05:01 [INFO] (telemetry) Starting builder docker.ubuntu-bionic
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 [DEBUG] Docker version: 20.0.0
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 [DEBUG] Container will be committed
+2022/10/13 14:05:01 ui: [1;32m==> learn-packer.docker.ubuntu: Creating a temporary directory for sharing data...[0m
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Set Packer temp dir to /home/rafael/.config/packer/tmp2793669687
+2022/10/13 14:05:01 ui: [1;32m==> learn-packer.docker.ubuntu: Pulling Docker image: ubuntu:xenial[0m
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Executing: /usr/bin/docker [pull ubuntu:xenial]
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 [DEBUG] Docker version: 20.0.0
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 [DEBUG] Container will be committed
+2022/10/13 14:05:01 ui: [1;36m==> learn-packer.docker.ubuntu-bionic: Creating a temporary directory for sharing data...[0m
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Set Packer temp dir to /home/rafael/.config/packer/tmp2481277613
+2022/10/13 14:05:01 ui: [1;36m==> learn-packer.docker.ubuntu-bionic: Pulling Docker image: ubuntu:bionic[0m
+2022/10/13 14:05:01 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:01 Executing: /usr/bin/docker [pull ubuntu:bionic]
+2022/10/13 14:05:04 ui: [0;36m    learn-packer.docker.ubuntu-bionic: bionic: Pulling from library/ubuntu[0m
+2022/10/13 14:05:04 ui: [0;36m    learn-packer.docker.ubuntu-bionic: Digest: sha256:40b84b75884ff39e4cac4bf62cb9678227b1fbf9dbe3f67ef2a6b073aa4bb529[0m
+2022/10/13 14:05:04 ui: [0;36m    learn-packer.docker.ubuntu-bionic: Status: Image is up to date for ubuntu:bionic[0m
+2022/10/13 14:05:04 ui: [0;36m    learn-packer.docker.ubuntu-bionic: docker.io/library/ubuntu:bionic[0m
+2022/10/13 14:05:04 ui: [1;36m==> learn-packer.docker.ubuntu-bionic: Starting docker container...[0m
+2022/10/13 14:05:04 ui: [0;36m    learn-packer.docker.ubuntu-bionic: Run command: docker run -v /home/rafael/.config/packer/tmp2481277613:/packer-files -d -i -t --entrypoint=/bin/sh -- ubuntu:bionic[0m
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Starting container with args: [run -v /home/rafael/.config/packer/tmp2481277613:/packer-files -d -i -t --entrypoint=/bin/sh -- ubuntu:bionic]
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Waiting for container to finish starting
+2022/10/13 14:05:04 ui: [0;32m    learn-packer.docker.ubuntu: xenial: Pulling from library/ubuntu[0m
+2022/10/13 14:05:04 ui: [0;32m    learn-packer.docker.ubuntu: Digest: sha256:91bd29a464fdabfcf44e29e1f2a5f213c6dfa750b6290e40dd6998ac79da3c41[0m
+2022/10/13 14:05:04 ui: [0;32m    learn-packer.docker.ubuntu: Status: Image is up to date for ubuntu:xenial[0m
+2022/10/13 14:05:04 ui: [0;32m    learn-packer.docker.ubuntu: docker.io/library/ubuntu:xenial[0m
+2022/10/13 14:05:04 ui: [1;32m==> learn-packer.docker.ubuntu: Starting docker container...[0m
+2022/10/13 14:05:04 ui: [0;32m    learn-packer.docker.ubuntu: Run command: docker run -v /home/rafael/.config/packer/tmp2793669687:/packer-files -d -i -t --entrypoint=/bin/sh -- ubuntu:xenial[0m
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Starting container with args: [run -v /home/rafael/.config/packer/tmp2793669687:/packer-files -d -i -t --entrypoint=/bin/sh -- ubuntu:xenial]
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Waiting for container to finish starting
+2022/10/13 14:05:04 ui: [0;36m    learn-packer.docker.ubuntu-bionic: Container ID: 9a8c59f0cc747a898738e576910b116ffc38b9efc380a613fda13fb1f1980b54[0m
+2022/10/13 14:05:04 ui: [1;36m==> learn-packer.docker.ubuntu-bionic: Using docker communicator to connect: 172.17.0.2[0m
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Running the provision hook
+2022/10/13 14:05:04 [INFO] (telemetry) Starting provisioner shell
+2022/10/13 14:05:04 ui: [1;36m==> learn-packer.docker.ubuntu-bionic: Provisioning with shell script: /tmp/packer-shell1573033370[0m
+2022/10/13 14:05:04 packer-provisioner-shell plugin: Opening /tmp/packer-shell1573033370 for reading
+2022/10/13 14:05:04 packer-provisioner-shell plugin: [INFO] 76 bytes written for 'uploadData'
+2022/10/13 14:05:04 [INFO] 76 bytes written for 'uploadData'
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Copying to /tmp/script_2994.sh on container 9a8c59f0cc747a898738e576910b116ffc38b9efc380a613fda13fb1f1980b54.
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Copied 76 bytes for /tmp/script_2994.sh
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Executing docker exec -i 9a8c59f0cc747a898738e576910b116ffc38b9efc380a613fda13fb1f1980b54 /bin/sh -c (chmod 0755 /tmp/script_2994.sh):
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:04 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:04 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:04 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Executing docker exec -i 9a8c59f0cc747a898738e576910b116ffc38b9efc380a613fda13fb1f1980b54 /bin/sh -c (chmod +x /tmp/script_2994.sh; FOO='hello world' PACKER_BUILDER_TYPE='docker' PACKER_BUILD_NAME='ubuntu-bionic'  /tmp/script_2994.sh):
+2022/10/13 14:05:04 ui: [0;32m    learn-packer.docker.ubuntu: Container ID: a8d6835a4fd676e4d34bb1acb9e4a7cce368d3a880616b2ae81eebb27f6aedc2[0m
+2022/10/13 14:05:04 ui: [1;32m==> learn-packer.docker.ubuntu: Using docker communicator to connect: 172.17.0.3[0m
+2022/10/13 14:05:04 ui: [0;36m    learn-packer.docker.ubuntu-bionic: Adding file 1665666301[0m
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:04 [INFO] 23 bytes written for 'stdout'
+2022/10/13 14:05:04 [INFO] 0 bytes written for 'stderr'
+2022/10/13 14:05:04 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:04 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:04 packer-provisioner-shell plugin: [INFO] 23 bytes written for 'stdout'
+2022/10/13 14:05:04 packer-provisioner-shell plugin: [INFO] 0 bytes written for 'stderr'
+2022/10/13 14:05:04 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Executing docker exec -i 9a8c59f0cc747a898738e576910b116ffc38b9efc380a613fda13fb1f1980b54 /bin/sh -c (rm -f /tmp/script_2994.sh):
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Running the provision hook
+2022/10/13 14:05:04 [INFO] (telemetry) Starting provisioner shell
+2022/10/13 14:05:04 ui: [1;32m==> learn-packer.docker.ubuntu: Provisioning with shell script: /tmp/packer-shell154871156[0m
+2022/10/13 14:05:04 packer-provisioner-shell plugin: Opening /tmp/packer-shell154871156 for reading
+2022/10/13 14:05:04 packer-provisioner-shell plugin: [INFO] 76 bytes written for 'uploadData'
+2022/10/13 14:05:04 [INFO] 76 bytes written for 'uploadData'
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Copying to /tmp/script_2540.sh on container a8d6835a4fd676e4d34bb1acb9e4a7cce368d3a880616b2ae81eebb27f6aedc2.
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Copied 76 bytes for /tmp/script_2540.sh
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Executing docker exec -i a8d6835a4fd676e4d34bb1acb9e4a7cce368d3a880616b2ae81eebb27f6aedc2 /bin/sh -c (chmod 0755 /tmp/script_2540.sh):
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:04 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:04 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:04 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Executing docker exec -i 9a8c59f0cc747a898738e576910b116ffc38b9efc380a613fda13fb1f1980b54 /bin/sh -c (rm -f ):
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:04 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:04 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:04 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:04 [INFO] (telemetry) ending shell
+2022/10/13 14:05:04 [INFO] (telemetry) Starting provisioner shell
+2022/10/13 14:05:04 ui: [1;36m==> learn-packer.docker.ubuntu-bionic: Provisioning with shell script: /tmp/packer-shell2596955189[0m
+2022/10/13 14:05:04 packer-provisioner-shell plugin: Opening /tmp/packer-shell2596955189 for reading
+2022/10/13 14:05:04 packer-provisioner-shell plugin: [INFO] 53 bytes written for 'uploadData'
+2022/10/13 14:05:04 [INFO] 53 bytes written for 'uploadData'
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Copying to /tmp/script_5709.sh on container 9a8c59f0cc747a898738e576910b116ffc38b9efc380a613fda13fb1f1980b54.
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Copied 53 bytes for /tmp/script_5709.sh
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:04 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:04 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:04 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Executing docker exec -i a8d6835a4fd676e4d34bb1acb9e4a7cce368d3a880616b2ae81eebb27f6aedc2 /bin/sh -c (chmod +x /tmp/script_2540.sh; FOO='hello world' PACKER_BUILDER_TYPE='docker' PACKER_BUILD_NAME='ubuntu'  /tmp/script_2540.sh):
+2022/10/13 14:05:04 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:04 Executing docker exec -i 9a8c59f0cc747a898738e576910b116ffc38b9efc380a613fda13fb1f1980b54 /bin/sh -c (chmod 0755 /tmp/script_5709.sh):
+2022/10/13 14:05:05 ui: [0;32m    learn-packer.docker.ubuntu: Adding file 1665666301[0m
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] 23 bytes written for 'stdout'
+2022/10/13 14:05:05 [INFO] 0 bytes written for 'stderr'
+2022/10/13 14:05:05 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] 23 bytes written for 'stdout'
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] 0 bytes written for 'stderr'
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 Executing docker exec -i a8d6835a4fd676e4d34bb1acb9e4a7cce368d3a880616b2ae81eebb27f6aedc2 /bin/sh -c (rm -f /tmp/script_2540.sh):
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 Executing docker exec -i 9a8c59f0cc747a898738e576910b116ffc38b9efc380a613fda13fb1f1980b54 /bin/sh -c (chmod +x /tmp/script_5709.sh; PACKER_BUILDER_TYPE='docker' PACKER_BUILD_NAME='ubuntu-bionic'  /tmp/script_5709.sh):
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 Executing docker exec -i a8d6835a4fd676e4d34bb1acb9e4a7cce368d3a880616b2ae81eebb27f6aedc2 /bin/sh -c (rm -f ):
+2022/10/13 14:05:05 ui: [0;36m    learn-packer.docker.ubuntu-bionic: Running ubuntu:xenial Docker Image[0m
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] 35 bytes written for 'stdout'
+2022/10/13 14:05:05 [INFO] 0 bytes written for 'stderr'
+2022/10/13 14:05:05 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] 35 bytes written for 'stdout'
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] 0 bytes written for 'stderr'
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 Executing docker exec -i 9a8c59f0cc747a898738e576910b116ffc38b9efc380a613fda13fb1f1980b54 /bin/sh -c (rm -f /tmp/script_5709.sh):
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] (telemetry) ending shell
+2022/10/13 14:05:05 [INFO] (telemetry) Starting provisioner shell
+2022/10/13 14:05:05 ui: [1;32m==> learn-packer.docker.ubuntu: Provisioning with shell script: /tmp/packer-shell2106921408[0m
+2022/10/13 14:05:05 packer-provisioner-shell plugin: Opening /tmp/packer-shell2106921408 for reading
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] 53 bytes written for 'uploadData'
+2022/10/13 14:05:05 [INFO] 53 bytes written for 'uploadData'
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 Copying to /tmp/script_1361.sh on container a8d6835a4fd676e4d34bb1acb9e4a7cce368d3a880616b2ae81eebb27f6aedc2.
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 Copied 53 bytes for /tmp/script_1361.sh
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 Executing docker exec -i 9a8c59f0cc747a898738e576910b116ffc38b9efc380a613fda13fb1f1980b54 /bin/sh -c (rm -f ):
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 Executing docker exec -i a8d6835a4fd676e4d34bb1acb9e4a7cce368d3a880616b2ae81eebb27f6aedc2 /bin/sh -c (chmod 0755 /tmp/script_1361.sh):
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] (telemetry) ending shell
+2022/10/13 14:05:05 ui: [1;36m==> learn-packer.docker.ubuntu-bionic: Committing the container[0m
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 Committing container with args: [commit 9a8c59f0cc747a898738e576910b116ffc38b9efc380a613fda13fb1f1980b54]
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 Executing docker exec -i a8d6835a4fd676e4d34bb1acb9e4a7cce368d3a880616b2ae81eebb27f6aedc2 /bin/sh -c (chmod +x /tmp/script_1361.sh; PACKER_BUILDER_TYPE='docker' PACKER_BUILD_NAME='ubuntu'  /tmp/script_1361.sh):
+2022/10/13 14:05:05 ui: [0;32m    learn-packer.docker.ubuntu: Running ubuntu:xenial Docker Image[0m
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] 35 bytes written for 'stdout'
+2022/10/13 14:05:05 [INFO] 0 bytes written for 'stderr'
+2022/10/13 14:05:05 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] 35 bytes written for 'stdout'
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] 0 bytes written for 'stderr'
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 Executing docker exec -i a8d6835a4fd676e4d34bb1acb9e4a7cce368d3a880616b2ae81eebb27f6aedc2 /bin/sh -c (rm -f /tmp/script_1361.sh):
+2022/10/13 14:05:05 ui: [0;36m    learn-packer.docker.ubuntu-bionic: Image ID: sha256:2c2b23cf4a8c0625fd2584c57d2eeee5a72e540dbf647c969437f9b85b28f711[0m
+2022/10/13 14:05:05 ui: [1;36m==> learn-packer.docker.ubuntu-bionic: Killing the container: 9a8c59f0cc747a898738e576910b116ffc38b9efc380a613fda13fb1f1980b54[0m
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 Executing docker exec -i a8d6835a4fd676e4d34bb1acb9e4a7cce368d3a880616b2ae81eebb27f6aedc2 /bin/sh -c (rm -f ):
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] RPC endpoint: Communicator ended with: 0
+2022/10/13 14:05:05 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2022/10/13 14:05:05 [INFO] (telemetry) ending shell
+2022/10/13 14:05:05 ui: [1;32m==> learn-packer.docker.ubuntu: Committing the container[0m
+2022/10/13 14:05:05 packer-plugin-docker_v1.0.8_x5.0_linux_amd64 plugin: 2022/10/13 14:05:05 Committing container with args: [commit a8d6835a4fd676e4d34bb1acb9e4a7cce368d3a880616b2ae81eebb27f6aedc2]
+2022/10/13 14:05:05 ui: [0;32m    learn-packer.docker.ubuntu: Image ID: sha256:bed65c470b62f61d0654ff73c0a55016fe84ca9a5e25503564898a5438c11162[0m
+2022/10/13 14:05:05 ui: [1;32m==> learn-packer.docker.ubuntu: Killing the container: a8d6835a4fd676e4d34bb1acb9e4a7cce368d3a880616b2ae81eebb27f6aedc2[0m
+2022/10/13 14:05:05 [INFO] (telemetry) ending docker.ubuntu-bionic
+2022/10/13 14:05:05 ui: [1;36m==> learn-packer.docker.ubuntu-bionic: Running post-processor:  (type docker-tag)[0m
+2022/10/13 14:05:05 [INFO] (telemetry) Starting post-processor docker-tag
+2022/10/13 14:05:05 ui: [0;36m    learn-packer.docker.ubuntu-bionic (docker-tag): Tagging image: sha256:2c2b23cf4a8c0625fd2584c57d2eeee5a72e540dbf647c969437f9b85b28f711[0m
+2022/10/13 14:05:05 ui: [0;36m    learn-packer.docker.ubuntu-bionic (docker-tag): Repository: learn-packer:ubuntu-bionic[0m
+2022/10/13 14:05:05 [INFO] (telemetry) ending docker.ubuntu
+2022/10/13 14:05:05 ui: [1;32m==> learn-packer.docker.ubuntu: Running post-processor:  (type docker-tag)[0m
+2022/10/13 14:05:05 [INFO] (telemetry) Starting post-processor docker-tag
+2022/10/13 14:05:05 ui: [0;32m    learn-packer.docker.ubuntu (docker-tag): Tagging image: sha256:bed65c470b62f61d0654ff73c0a55016fe84ca9a5e25503564898a5438c11162[0m
+2022/10/13 14:05:05 ui: [0;32m    learn-packer.docker.ubuntu (docker-tag): Repository: learn-packer:ubuntu-xenial[0m
+2022/10/13 14:05:05 ui: [0;36m    learn-packer.docker.ubuntu-bionic (docker-tag): Tagging image: sha256:2c2b23cf4a8c0625fd2584c57d2eeee5a72e540dbf647c969437f9b85b28f711[0m
+2022/10/13 14:05:05 ui: [0;36m    learn-packer.docker.ubuntu-bionic (docker-tag): Repository: learn-packer:packer-rocks[0m
+2022/10/13 14:05:05 ui: [0;32m    learn-packer.docker.ubuntu (docker-tag): Tagging image: sha256:bed65c470b62f61d0654ff73c0a55016fe84ca9a5e25503564898a5438c11162[0m
+2022/10/13 14:05:05 ui: [0;32m    learn-packer.docker.ubuntu (docker-tag): Repository: learn-packer:packer-rocks[0m
+2022/10/13 14:05:05 [INFO] (telemetry) ending docker-tag
+2022/10/13 14:05:05 Flagging to keep original artifact from post-processor 'docker-tag'
+2022/10/13 14:05:05 ui: [1;36mBuild 'learn-packer.docker.ubuntu-bionic' finished after 3 seconds 815 milliseconds.[0m
+2022/10/13 14:05:05 [INFO] (telemetry) ending docker-tag
+2022/10/13 14:05:05 Flagging to keep original artifact from post-processor 'docker-tag'
+2022/10/13 14:05:05 ui: [1;32mBuild 'learn-packer.docker.ubuntu' finished after 3 seconds 840 milliseconds.[0m
+2022/10/13 14:05:05 ui: 
+==> Wait completed after 3 seconds 840 milliseconds
+2022/10/13 14:05:05 ui: 
+==> Builds finished. The artifacts of successful builds are:
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu,artifact-count []string{"2"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu,artifact []string{"0", "builder-id", "packer.post-processor.docker-import"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu,artifact []string{"0", "id", "sha256:bed65c470b62f61d0654ff73c0a55016fe84ca9a5e25503564898a5438c11162"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu,artifact []string{"0", "string", "Imported Docker image: sha256:bed65c470b62f61d0654ff73c0a55016fe84ca9a5e25503564898a5438c11162"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu,artifact []string{"0", "files-count", "0"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu,artifact []string{"0", "end"}
+2022/10/13 14:05:05 ui: --> learn-packer.docker.ubuntu: Imported Docker image: sha256:bed65c470b62f61d0654ff73c0a55016fe84ca9a5e25503564898a5438c11162
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu,artifact []string{"1", "builder-id", "packer.post-processor.docker-tag"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu,artifact []string{"1", "id", "learn-packer:packer-rocks"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu,artifact []string{"1", "string", "Imported Docker image: learn-packer:packer-rocks with tags learn-packer:ubuntu-xenial learn-packer:packer-rocks"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu,artifact []string{"1", "files-count", "0"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu,artifact []string{"1", "end"}
+2022/10/13 14:05:05 ui: --> learn-packer.docker.ubuntu: Imported Docker image: learn-packer:packer-rocks with tags learn-packer:ubuntu-xenial learn-packer:packer-rocks
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu-bionic,artifact-count []string{"2"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu-bionic,artifact []string{"0", "builder-id", "packer.post-processor.docker-import"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu-bionic,artifact []string{"0", "id", "sha256:2c2b23cf4a8c0625fd2584c57d2eeee5a72e540dbf647c969437f9b85b28f711"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu-bionic,artifact []string{"0", "string", "Imported Docker image: sha256:2c2b23cf4a8c0625fd2584c57d2eeee5a72e540dbf647c969437f9b85b28f711"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu-bionic,artifact []string{"0", "files-count", "0"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu-bionic,artifact []string{"0", "end"}
+2022/10/13 14:05:05 ui: --> learn-packer.docker.ubuntu-bionic: Imported Docker image: sha256:2c2b23cf4a8c0625fd2584c57d2eeee5a72e540dbf647c969437f9b85b28f711
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu-bionic,artifact []string{"1", "builder-id", "packer.post-processor.docker-tag"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu-bionic,artifact []string{"1", "id", "learn-packer:packer-rocks"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu-bionic,artifact []string{"1", "string", "Imported Docker image: learn-packer:packer-rocks with tags learn-packer:ubuntu-bionic learn-packer:packer-rocks"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu-bionic,artifact []string{"1", "files-count", "0"}
+2022/10/13 14:05:05 machine readable: learn-packer.docker.ubuntu-bionic,artifact []string{"1", "end"}
+2022/10/13 14:05:05 ui: --> learn-packer.docker.ubuntu-bionic: Imported Docker image: learn-packer:packer-rocks with tags learn-packer:ubuntu-bionic learn-packer:packer-rocks
+2022/10/13 14:05:05 [INFO] (telemetry) Finalizing.
+2022/10/13 14:05:06 waiting for all plugin processes to complete...
+2022/10/13 14:05:06 /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64: plugin process exited
+2022/10/13 14:05:06 /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64: plugin process exited
+2022/10/13 14:05:06 /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64: plugin process exited
+2022/10/13 14:05:06 /home/rafael/.config/packer/plugins/github.com/hashicorp/docker/packer-plugin-docker_v1.0.8_x5.0_linux_amd64: plugin process exited
+2022/10/13 14:05:06 /usr/bin/packer: plugin process exited
+2022/10/13 14:05:06 /usr/bin/packer: plugin process exited
+2022/10/13 14:05:06 /usr/bin/packer: plugin process exited
+2022/10/13 14:05:06 /usr/bin/packer: plugin process exited

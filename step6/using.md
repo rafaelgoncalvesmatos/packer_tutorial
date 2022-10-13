@@ -5,6 +5,6 @@
 ╰─ packer validate . 
 The configuration is valid.
 
-
+╰─ export PACKER_LOG="yes" && export PACKER_LOG_PATH="packer.log" && packer build . 
 
 ```

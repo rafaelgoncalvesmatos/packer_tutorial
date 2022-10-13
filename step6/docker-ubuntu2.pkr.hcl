@@ -34,7 +34,7 @@ build {
       "FOO=hello world",
     ]
     inline = [
-      " echo Adding file",
+      " echo Adding file {{ timestamp }}",
       " echo \"FOO is $FOO\" > example.txt",
     ]
   }
@@ -56,5 +56,13 @@ build {
     tags = [ "ubuntu-bionic", "packer-rocks" ]
     only = [ "docker.ubuntu-bionic" ]
   }
+
+  # post-processors {
+    # post-processor "docker-import" {
+    #   repository = "swampdragons/testpush"
+    #   tag = "0.7"
+    # }
+  #   post-processor "docker-push" {}
+  # }
 
 }
