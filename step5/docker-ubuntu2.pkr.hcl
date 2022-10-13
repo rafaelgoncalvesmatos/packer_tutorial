@@ -49,5 +49,3 @@ build {
       "echo Running ${var.docker_image} Docker image.",
     ]
   }
-}
-
