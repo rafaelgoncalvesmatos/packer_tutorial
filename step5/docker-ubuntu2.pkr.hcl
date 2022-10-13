@@ -2,7 +2,7 @@ packer {
   required_plugins {
     docker = {
       version = ">= 0.0.7"
-      source = "github.com/hashicorp/docker"
+      source  = "github.com/hashicorp/docker"
     }
   }
 }
@@ -22,13 +22,19 @@ source "docker" "ubuntu" {
   commit = true
 }
 
+source "docker" "ubuntu-groovy" {
+  image  = "${var.docker_image}:groovy"
+  commit = true
+}
+
 build {
   name = "learn-packer"
-  sources = [ 
+  sources = [
     "source.docker.ubuntu",
     "source.docker.ubuntu-bionic",
+    "source.docker.ubuntu-groovy",
   ]
-  
+
   provisioner "shell" {
     environment_vars = [
       "FOO=Hello World",
